@@ -45,7 +45,7 @@ router.post('/', upload, async (req, res) => {
 
 
 //getimages
-router.get('/get', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const productIma = await productImages.findAll();
     res.json(productIma);
