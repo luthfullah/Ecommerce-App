@@ -107,8 +107,9 @@ router.get('/', async (req, res) => {
 // GET API    ///////////////////////////////////////////////////////////////////
 router.get('/getall', async (req, res) => {
   try {
-    const allProducts = await productModel.findAll();
-    res.status(200).json(allProducts);
+    // const allProducts = await productModel.findAll();
+    res.send("working")
+    // res.status(200).json(allProducts);
   } catch (error) {
     console.error('Error:', error.message);
     res.status(500).json({ error: 'Internal Server Error' });

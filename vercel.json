@@ -7,16 +7,20 @@
     "routes": [
       {
         "src": "/categories/",
-        "dest": "/server.js"
+        "dest": "/server.js",
+        "methods": ["GET"]
       },
       {
         "src": "/api/getall",
-        "dest": "/server.js"
+        "dest": "/server.js",
+        "methods": ["GET"]
       },
       {
         "src": "/(.*)",
-        "dest": "/"
+        "dest": "/",
+        "methods": ["GET"]
       }
     ]
+    
   }
   
